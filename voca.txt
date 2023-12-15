@@ -1,0 +1,2 @@
+prerequisite: something that must or happen before something esle can happend
+IDE: integrated development environment

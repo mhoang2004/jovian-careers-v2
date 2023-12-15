@@ -1,0 +1,19 @@
+1. flask to build
+2. connect to cloud database
+
+for drawing: https://excalidraw.com/
+for image: https://unsplash.com/
+for deploy: https://render.com/
+
+
+{{data}} : for render data
+{% command %}: for exe the python code
+{% include 'home.html' %}: for the whole htlm template
+ 
+send information as JSON -> rest API (JSON API or API endpoint)
+-> my web server return some information not just as HTML 
+-> return JSON -> data (so we can do whatever we want) 
+
+API: just a URL, not return HTML, return some data structured data in form of JSON
+
+Web service: database, dynamic data, API route, ...
