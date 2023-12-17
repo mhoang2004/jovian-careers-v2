@@ -17,3 +17,35 @@ send information as JSON -> rest API (JSON API or API endpoint)
 API: just a URL, not return HTML, return some data structured data in form of JSON
 
 Web service: database, dynamic data, API route, ...
+
+Never push password on github public
+
+
+// database
+DATABASE_HOST=aws.connect.psdb.cloud
+DATABASE_USERNAME=f7igqkbmxept2atfaje2
+DATABASE_PASSWORD=pscale_pw_6zA8l74DUfG8knCxyfGONnYUtXLsjs6bcreDTGW3RGI
+//
+
+//To learn more about networking, server hosting, and web application deployment 
+
+Networking Basics: 
+Start with understanding IP addresses, ports, and the basics of how data travels over networks. 
+Keywords: IP address, TCP/IP, ports, network protocols.
+
+Server Hosting and Deployment: 
+Look into different hosting platforms, deployment methods, and server configurations. 
+Keywords: web hosting, cloud hosting, VPS (Virtual Private Server), server deployment.
+
+Web Servers: 
+Learn about web server software like Apache, Nginx, or server options provided by different programming languages/frameworks (e.g., Flask, Django, Node.js). 
+Keywords: web server, Flask deployment, Nginx configuration.
+
+Network Security: 
+Understand security considerations when hosting applications, including firewalls, encryption,  and best practices for securing servers and networks. 
+Keywords: network security, firewall, HTTPS, SSL/TLS.
+
+Web Application Development: 
+Dive into building web applications using frameworks like Flask, Django, or others. 
+Keywords: web development, Flask tutorial, Django tutorial.
+//
