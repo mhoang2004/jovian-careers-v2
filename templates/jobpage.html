@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="container">
+    <h1 class="text-center mt-3 mb-4">Jovian Careers</h1>
+    <h4 class="mb-2">{{jobs[0].title}}</h4>
+    <p class="lead">{{jobs[0].location}}</p>
+    <h4 class="mb-3">Responsibilities</h4>
+    <ul>
+        {% for line in jobs[0].responsibities.split("\n")%}
+        <li class="text-capitalize display-5 mt-2">{{line}}</li>
+        {% endfor %}
+    </ul>
+    <h4 class="mb-3">Requirements</h4>
+    <ol>
+        {% for line in jobs[0].requirements.split("\n")%}
+        <li class="text-capitalize display-5 mt-2">{{line}}</li>
+        {% endfor %}
+    </ol>
+    <h4>Salary</h4>
+    <p>{{jobs[0].currency}}{{jobs[0].salary}}</p>
+</div>
+{% endblock %}

@@ -20,12 +20,10 @@ Web service: database, dynamic data, API route, ...
 
 Never push password on github public
 
-
-// database
-DATABASE_HOST=aws.connect.psdb.cloud
-DATABASE_USERNAME=f7igqkbmxept2atfaje2
-DATABASE_PASSWORD=pscale_pw_6zA8l74DUfG8knCxyfGONnYUtXLsjs6bcreDTGW3RGI
-//
+Dynamic link:
+@app.route("/job/<id>")
+def show_job(id):
+    pass
 
 //To learn more about networking, server hosting, and web application deployment 
 

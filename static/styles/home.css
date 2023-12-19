@@ -1,0 +1,31 @@
+
+/* Homepage */
+#banner {
+    height: 360px;
+    object-fit: cover;
+    width: 100%;
+    background-position: 50% 50%;
+}
+
+.jobs {
+    margin-bottom: 16px;
+    padding: 8px 0;
+}
+
+.job-title {
+    margin-bottom: 4px;
+}
+
+.job-title:hover {
+    text-decoration: none;
+    color: #000; 
+}
+
+#the-king {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: center 15%;
+}
+

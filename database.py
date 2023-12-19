@@ -20,15 +20,18 @@ def get_database_connection():
     )
 
 
-def load_jobs_from_db():
+def load_jobs_from_db(id=-1):
     connection = get_database_connection()
     cursor = connection.cursor()
 
-    # Execute a simple SQL query
-    cursor.execute("SELECT * FROM jobs")
+    if id == -1:
+        cursor.execute("SELECT * FROM jobs")
+    else:
+        cursor.execute("SELECT * FROM jobs WHERE id = %s", (id,))
 
     # Fetch the results if needed
     results = cursor.fetchall()
+
     # for row in results:
     # print(row) # Do something with the retrieved data
 

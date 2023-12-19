@@ -1,0 +1,16 @@
+/* Navbar */
+.my-navbar {
+    padding: 8px 50px;
+    height: 70px;
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+#logo-img {
+    height: 44px;
+    width: 44px;
+    border-radius: 5px;
+}
