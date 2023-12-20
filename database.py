@@ -40,3 +40,16 @@ def load_jobs_from_db(id=-1):
     connection.close()
 
     return results
+
+
+def add_application_to_db(job_id, application):
+    connection = get_database_connection()
+    cursor = connection.cursor()
+
+    application_tuple = (job_id, application["name"], application["email"],
+                         application["linkedin"], application["education"], application["work_experience"], application["resume_link"])
+    cursor.execute(
+        "INSERT INTO applications (job_id, full_name, email, linkedin_url, education, work_experience, resume_url) VALUES (%s, %s, %s, %s, %s, %s, %s)", application_tuple)
+
+    cursor.close()
+    connection.close()

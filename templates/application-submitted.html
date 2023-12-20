@@ -1,0 +1,47 @@
+{% extends 'layout.html' %} {% block content %}
+
+<div class="container mt-6">
+    <h1 class="text-center mt-3 mb-4">{{company_name}} Careers</h1>
+    <h4 class="text-success text-center">Your application for the role of "{{jobs[0].title}}" has been submitted!!</h4>
+
+    <div>
+        <p><b>Fullname: </b>{{data.name}}</p>
+        <p><b>Email: </b>{{data.email}}</p>
+        <p><b>LinkedIn: </b> <a href="{{data.linkedin}}">{{data.linkedin}}</a></p>
+        <p>
+            <b>Education: </b>
+            {% if data.education %} 
+                <ul>
+                    {% for line in data.education.split("\n")%}
+                        <li class="text-capitalize display-5 mt-2">{{line}}</li>
+                    {% endfor %}
+                </ul>
+            {% else %} 
+            {{ "Not provide" }} 
+            {% endif %}
+        </p>
+        <p>
+            <b>Work Experience: </b>
+            {% if data.work_experience %} 
+                <ul>
+                    {% for line in data.work_experience.split("\n")%}
+                        <li class="text-capitalize display-5 mt-2">{{line}}</li>
+                    {% endfor %}
+                </ul>
+            {% else %} 
+            {{ "Not provide" }} 
+            {% endif %}
+        </p>
+        <p>
+            <b>Resume link: </b>
+            {% if data.resume_link %} {{ data.resume_link }} {% else %} {{ "Not provide" }} {% endif
+            %}
+        </p>
+    </div>
+
+    <br />
+    <p class="text-light bg-dark text-center">
+        ! We will contact you as soon as possible if you qualify
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,6 @@
+input:not(input[type="submit"]) {
+    width: 50%;
+}
+textarea {
+    width: 70%;
+}

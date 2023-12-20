@@ -1,0 +1,43 @@
+<div class="border border-dark rounded p-4 mt-5">
+    <h4 class="text-center mt-2 mb-4">Application Form</h4>
+
+    <form class="pl-4" action="/job/{{jobs[0].id}}/apply" method="post">
+        <div class="mt-2">
+            <label for="name">Name <span style="color: red">*</span></label
+            ><br />
+            <input type="text" name="name" placeholder="Bruce Wayne" required />
+        </div>
+
+        <div class="mt-2">
+            <label for="email">Email <span style="color: red">*</span></label
+            ><br />
+            <input type="email" name="email" placeholder="bruce@wayne.com" required />
+        </div>
+
+        <div class="mt-2">
+            <label for="linkedin">LinkedIn <span style="color: red">*</span></label
+            ><br />
+            <input type="url" name="linkedin" placeholder="http://linked.com/in/bruce" required />
+        </div>
+
+        <div class="mt-2">
+            <label for="education">Education</label><br />
+            <textarea name="education" cols="40" rows="7"></textarea>
+        </div>
+
+        <div class="mt-2">
+            <label for="work_experience">Work Experience</label><br />
+            <textarea name="work_experience" cols="40" rows="7"></textarea>
+        </div>
+
+        <div class="mt-2">
+            <label for="resume_link">Resume Link</label><br />
+            <input type="url" name="resume_link" placeholder="Your resume link" />
+        </div>
+
+        <div class="mt-2">
+            <br />
+            <input type="submit" />
+        </div>
+    </form>
+</div>

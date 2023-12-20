@@ -1,7 +1,7 @@
 {% extends 'layout.html' %} {% block content %}
 
 <div class="container">
-    <h1 class="text-center mt-3 mb-4">Jovian Careers</h1>
+    <h1 class="text-center mt-3 mb-4">{{company_name}} Careers</h1>
     <h4 class="mb-2">{{jobs[0].title}}</h4>
     <p class="lead">{{jobs[0].location}}</p>
     <h4 class="mb-3">Responsibilities</h4>
@@ -18,5 +18,7 @@
     </ol>
     <h4>Salary</h4>
     <p>{{jobs[0].currency}}{{jobs[0].salary}}</p>
+
+    {% include 'application-form.html' %}
 </div>
 {% endblock %}
